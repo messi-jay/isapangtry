@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#FFFFFF" rx="16"/>
+  <!-- Border -->
+  <rect x="10" y="10" width="280" height="280" fill="none" stroke="#E2E8F0" stroke-width="2" rx="12"/>
+  
+  <!-- QR Finder Patterns -->
+  <!-- Top Left -->
+  <rect x="30" y="30" width="60" height="60" fill="#0A2540" rx="6"/>
+  <rect x="40" y="40" width="40" height="40" fill="#FFFFFF" rx="4"/>
+  <rect x="48" y="48" width="24" height="24" fill="#007DFE" rx="2"/>
+  
+  <!-- Top Right -->
+  <rect x="210" y="30" width="60" height="60" fill="#0A2540" rx="6"/>
+  <rect x="220" y="40" width="40" height="40" fill="#FFFFFF" rx="4"/>
+  <rect x="228" y="48" width="24" height="24" fill="#007DFE" rx="2"/>
+  
+  <!-- Bottom Left -->
+  <rect x="30" y="210" width="60" height="60" fill="#0A2540" rx="6"/>
+  <rect x="40" y="220" width="40" height="40" fill="#FFFFFF" rx="4"/>
+  <rect x="48" y="228" width="24" height="24" fill="#007DFE" rx="2"/>
+
+  <!-- QR Matrix Grid Dots -->
+  <g fill="#0F172A">
+    <!-- Row 1 -->
+    <rect x="105" y="32" width="10" height="10" rx="2"/>
+    <rect x="125" y="32" width="10" height="10" rx="2"/>
+    <rect x="155" y="32" width="10" height="10" rx="2"/>
+    <rect x="175" y="32" width="10" height="10" rx="2"/>
+    <rect x="185" y="32" width="10" height="10" rx="2"/>
+
+    <!-- Row 2 -->
+    <rect x="105" y="52" width="10" height="10" rx="2"/>
+    <rect x="145" y="52" width="10" height="10" rx="2"/>
+    <rect x="165" y="52" width="10" height="10" rx="2"/>
+
+    <!-- Row 3 -->
+    <rect x="105" y="72" width="10" height="10" rx="2"/>
+    <rect x="125" y="72" width="10" height="10" rx="2"/>
+    <rect x="135" y="72" width="10" height="10" rx="2"/>
+    <rect x="175" y="72" width="10" height="10" rx="2"/>
+
+    <!-- Mid bands -->
+    <rect x="32" y="105" width="10" height="10" rx="2"/>
+    <rect x="52" y="105" width="10" height="10" rx="2"/>
+    <rect x="72" y="105" width="10" height="10" rx="2"/>
+    <rect x="92" y="105" width="10" height="10" rx="2"/>
+    <rect x="165" y="105" width="10" height="10" rx="2"/>
+    <rect x="195" y="105" width="10" height="10" rx="2"/>
+    <rect x="225" y="105" width="10" height="10" rx="2"/>
+    <rect x="255" y="105" width="10" height="10" rx="2"/>
+
+    <rect x="32" y="125" width="10" height="10" rx="2"/>
+    <rect x="62" y="125" width="10" height="10" rx="2"/>
+    <rect x="82" y="125" width="10" height="10" rx="2"/>
+    <rect x="215" y="125" width="10" height="10" rx="2"/>
+    <rect x="245" y="125" width="10" height="10" rx="2"/>
+
+    <!-- Lower bands -->
+    <rect x="105" y="165" width="10" height="10" rx="2"/>
+    <rect x="125" y="165" width="10" height="10" rx="2"/>
+    <rect x="155" y="165" width="10" height="10" rx="2"/>
+    <rect x="185" y="165" width="10" height="10" rx="2"/>
+    <rect x="215" y="165" width="10" height="10" rx="2"/>
+    <rect x="255" y="165" width="10" height="10" rx="2"/>
+
+    <rect x="105" y="185" width="10" height="10" rx="2"/>
+    <rect x="135" y="185" width="10" height="10" rx="2"/>
+    <rect x="175" y="185" width="10" height="10" rx="2"/>
+    <rect x="235" y="185" width="10" height="10" rx="2"/>
+
+    <rect x="105" y="215" width="10" height="10" rx="2"/>
+    <rect x="125" y="215" width="10" height="10" rx="2"/>
+    <rect x="145" y="215" width="10" height="10" rx="2"/>
+    <rect x="175" y="215" width="10" height="10" rx="2"/>
+    <rect x="205" y="215" width="10" height="10" rx="2"/>
+    <rect x="245" y="215" width="10" height="10" rx="2"/>
+
+    <rect x="105" y="245" width="10" height="10" rx="2"/>
+    <rect x="135" y="245" width="10" height="10" rx="2"/>
+    <rect x="165" y="245" width="10" height="10" rx="2"/>
+    <rect x="195" y="245" width="10" height="10" rx="2"/>
+    <rect x="235" y="245" width="10" height="10" rx="2"/>
+  </g>
+
+  <!-- Center GCash Badge -->
+  <rect x="110" y="110" width="80" height="80" rx="14" fill="#FFFFFF" stroke="#007DFE" stroke-width="3"/>
+  <rect x="116" y="116" width="68" height="68" rx="10" fill="#007DFE"/>
+  <circle cx="150" cy="144" r="16" fill="#FFFFFF"/>
+  <path d="M153 138 C148 136 144 139 144 144 C144 148 147 151 152 150 C154 149.6 155 148 155 146.5 L149 146.5 L149 143.5 L157 143.5 C157.2 147.5 154 153 149 153 C143 153 140 148 140 144 C140 140 144 135 150 135 C153 135 155 136 156.5 137.5 Z" fill="#007DFE"/>
+  <text x="150" y="172" font-family="'Inter', sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">GCASH QR</text>
+</svg>
