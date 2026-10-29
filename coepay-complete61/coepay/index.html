@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="COE-Pay: Centralized Payment Authorization, Collection, and Monitoring System - ICCT Colleges Foundation, Inc. College of Engineering and Digital Technology">
+  <title>COE-Pay | ICCT College of Engineering Payment Gateway</title>
+  
+  <!-- Favicon / Logo -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/icct-coe-logo.svg">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Institutional Navigation Bar -->
+  <header class="top-navbar" id="app-top-navbar">
+    <div class="brand-wrapper">
+      <img src="assets/img/icct-coe-logo.svg" alt="ICCT COE Seal" class="brand-logo">
+      <div class="brand-text">
+        <h1>COE-Pay Centralized Gateway</h1>
+        <p>ICCT COLLEGES FOUNDATION, INC. • COLLEGE OF ENGINEERING & DIGITAL TECHNOLOGY</p>
+      </div>
+    </div>
+    <div class="nav-controls" id="nav-user-controls">
+      <!-- Populated dynamically by app.js -->
+    </div>
+  </header>
+
+  <!-- Developer Testing / Impersonation Banner (Visible ONLY during Developer Impersonation Mode) -->
+  <div id="dev-impersonation-banner" class="dev-impersonation-banner" style="display: none;"></div>
+
+  <!-- Login View Container -->
+  <div id="auth-view-container" style="display: none;">
+    <!-- Populated by app.js when not logged in -->
+  </div>
+
+  <!-- Authenticated Main Application Container -->
+  <main class="main-wrapper" id="main-app-container">
+    <!-- View 0: System Developer View (Dave Guiyab) -->
+    <section id="developer-view-container" style="display: none;"></section>
+
+    <!-- View 1: Head Engineer / Coordinator View (Engr. Ivanlee Mendoza) -->
+    <section id="admin-view-container" style="display: none;"></section>
+
+    <!-- View 2: Officer View (Pearl Catequista) -->
+    <section id="personnel-view-container" style="display: none;"></section>
+
+    <!-- View 3: Student Portal View (Purchase, Paying, Ordering) -->
+    <section id="student-view-container" style="display: none;"></section>
+  </main>
+
+  <!-- Global Modal Dialog Backdrop -->
+  <div class="modal-backdrop" id="global-modal-backdrop">
+    <div class="modal-dialog" id="global-modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="global-modal-title">COE-Pay System Dialog</h3>
+        <button class="modal-close-btn" onclick="window.coeApp.closeModal()" title="Close dialog">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="global-modal-body">
+        <!-- Injected dynamically -->
+      </div>
+      <div class="modal-footer" id="global-modal-footer">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- External Libraries: SheetJS (XLSX) & Supabase Auth Client (@supabase/supabase-js v2) -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- Application Logic Scripts -->
+  <script src="js/db-schema.js"></script>
+  <script src="js/db-engine.js"></script>
+  <script src="js/env.js"></script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/receipt-helper.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/masterlist-upload.js"></script>
+  <script src="js/developer-view.js"></script>
+  <script src="js/admin-view.js"></script>
+  <script src="js/personnel-view.js"></script>
+  <script src="js/student-view.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

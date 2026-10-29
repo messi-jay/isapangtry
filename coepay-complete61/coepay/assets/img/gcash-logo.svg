@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+  <rect width="120" height="40" rx="8" fill="#007DFE"/>
+  <!-- GCash 'G' icon inside circle -->
+  <circle cx="25" cy="20" r="13" fill="#FFFFFF"/>
+  <path d="M28 14 C23 12 18 16 18 20 C18 24 22 28 27 27 C29.5 26.5 31 24.5 31 22.5 L24 22.5 L24 19 L33.5 19 C33.8 24 30 30 24 30 C17 30 14 24 14 20 C14 15 18 10 25 10 C28 10 30.5 11 32 12.5 L30 14.5 C29.5 14 28.5 13.5 28 14 Z" fill="#007DFE"/>
+  <!-- Text GCash -->
+  <text x="44" y="26" font-family="'Inter', -apple-system, sans-serif" font-size="17" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">GCash</text>
+</svg>

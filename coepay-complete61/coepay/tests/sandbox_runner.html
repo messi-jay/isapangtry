@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COE-Pay | Masterlist Bulk Upload Sandbox Test Runner</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body {
+      background-color: #F1F5F9;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      padding: 2rem;
+    }
+    .test-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+    }
+    .test-header {
+      padding: 1.25rem;
+      border-radius: var(--radius-md);
+      margin-bottom: 1.5rem;
+    }
+    .test-header.test-success {
+      background-color: #ECFDF5;
+      border: 1px solid #A7F3D0;
+      color: #065F46;
+    }
+    .test-header.test-failure {
+      background-color: #FEF2F2;
+      border: 1px solid #FECACA;
+      color: #991B1B;
+    }
+    .test-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .test-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid #E2E8F0;
+      font-size: 0.9rem;
+    }
+    .test-item.pass {
+      background-color: #F8FAFC;
+    }
+    .test-item.fail {
+      background-color: #FEF2F2;
+      border-color: #F87171;
+    }
+    .test-badge {
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+    .test-item.pass .test-badge {
+      background-color: #D1FAE5;
+      color: #065F46;
+    }
+    .test-item.fail .test-badge {
+      background-color: #FEE2E2;
+      color: #991B1B;
+    }
+  </style>
+</head>
+<body>
+  <div class="test-container">
+    <div class="flex-between mb-3">
+      <div>
+        <h1 style="font-size: 1.5rem; font-weight: 800; color: #0F172A;">COE-Pay Test Sandbox</h1>
+        <p class="text-muted" style="font-size: 0.85rem;">Dean Bulk Masterlist Upload & Batch Upsert Verification</p>
+      </div>
+      <a href="../index.html" class="btn btn-sm btn-outline">← Back to Portal</a>
+    </div>
+
+    <div id="test-output">
+      <div class="upload-loading-state">
+        <div class="spinner-inline"></div>
+        <span>Executing sandbox assertions...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Engine Scripts -->
+  <script src="../js/db-schema.js"></script>
+  <script src="../js/db-engine.js"></script>
+  <script src="test_masterlist_upsert_sandbox.js"></script>
+</body>
+</html>
