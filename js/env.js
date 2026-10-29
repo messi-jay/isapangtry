@@ -12,7 +12,7 @@
 window.COEPAY_ENV = window.COEPAY_ENV || {};
 
 // Keep false in production. true enables offline demo logins and visible test OTPs.
-window.COEPAY_ENV.allowSandbox = false;
+window.COEPAY_ENV.allowSandbox = true;
 
 window.COEPAY_ENV.supabase = {
   // Replace with your live project URL (e.g., 'https://abcdefghijklm.supabase.co')
