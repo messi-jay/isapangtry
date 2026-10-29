@@ -11,7 +11,7 @@
 
 window.COEPAY_ENV = window.COEPAY_ENV || {};
 
-// Keep false in production. true enables offline demo logins and visible test OTPs.
+
 window.COEPAY_ENV.allowSandbox = true;
 
 window.COEPAY_ENV.supabase = {
